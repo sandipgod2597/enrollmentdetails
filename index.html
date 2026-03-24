@@ -7,7 +7,7 @@
 
 <h2>Course Registration</h2>
 
-<form action="https://sorrowless-cira-unmutualized.ngrok-free.dev/webhook/Enrollment" method="POST">
+<form action="YOUR_PRODUCTION_WEBHOOK_URL" method="POST">
   
   <!-- Name -->
   <label for="name">Name:</label><br>
@@ -16,6 +16,10 @@
   <!-- Email -->
   <label for="email">Email:</label><br>
   <input type="email" id="email" name="email" required><br><br>
+
+  <!-- Phone Number -->
+  <label for="phone">Phone Number:</label><br>
+  <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" placeholder="Enter 10 digit number"><br><br>
 
   <!-- Course Dropdown -->
   <label for="course">Select Course:</label><br>
